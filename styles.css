@@ -23,7 +23,7 @@ p {
     width: 300px; /* iPhone 11 Pro Max width */
     height: 592.13px; /* iPhone 11 Pro Max height */
     margin: auto;
-    background-image: url('/images/iPhone 11 Pro Max - Portrait.svg');
+    background-image: url('images/iPhone 11 Pro Max - Portrait.svg');
     background-size: cover;
     overflow: hidden;
     position: relative;
