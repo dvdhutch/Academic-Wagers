@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    font-family: 'Barlow', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-size: 13px;
+}
+
+.p-heavy {
+    font-weight: 500;
+}
+
+.p-small {
+    font-size: 11px;
+}
+
+.p-smaller {
+    font-size: 9px;
+}
+
+.app-container {
+    width: 300px; /* iPhone 11 Pro Max width */
+    height: 592.13px; /* iPhone 11 Pro Max height */
+    margin: auto;
+    background-image: url('/images/iPhone 11 Pro Max - Portrait.svg');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+#screen_back {
+    background-color: #E9E9E9;
+    width: calc(100% - 42px);
+    height: calc(100% - 40px);
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    border-radius: 24px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #E9E9E9;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 24px; 
+    border-top-right-radius: 24px;
+}
+
+/* Claude.ai assisted with removing auto-extension of dropbar */
+.collapse {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    transition: none; /* Remove any transitions */
+}
+
+.collapse.show {
+    display: block; /* Show when toggled */
+    animation: none; /* Explicitly remove any animations */
+}
+
+.navbar-toggler {
+    outline: none;
+    box-shadow: none !important;
+}
+
+#navbarToggleContent {
+    transition: none !important;
+    animation: none !important;
+}
+/* End of AI Assistance */
+
+.course-name {
+    font-weight: 800;
+}
+
+.course-item {
+    font-weight: 800;
+}
+
+.body {
+    background-color: #F4F4F4;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.row {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+}
+
+#sell, #buy {
+    height: 20px;
+    border: none;
+    margin: none;
+    background: none;
+    margin-left: 10px;
+}
+
+#buy {
+    margin-left: 35px;
+}
+
+#pass, #fail {
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pass {
+    background-color: #10BE41;
+}
+
+#fail {
+    background-color: #CD0C0C;
+    margin-left: -40px;
+}
+
+#pass p, #fail p {
+    margin: 0;
+    text-align: center;
+}
+
+#place-bet {
+    font-weight: 800;
+}
+
+#place-bet-button {
+    background-color: #2525E7;
+    opacity: 65%;
+}
+
+#avg-price {
+    margin-top: 5px;
+}
+
+#avg-price, #shares, #potential-return {
+    margin-bottom: -8px;
+}
+
+#total_1, #total_2, #total_3, #total_4 {
+    margin-left: -7px;
+}
+
+#plus_button, #minus_button {
+    height: 30px;
+    border: none;
+}
+
+#place-bet {
+    margin-top: 5px;
+}
+
+#place-bet-button {
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#recent-orders-title {
+    margin-top: -15px;
+}
+
+#order-book_1, #order-book_2, #order-book_3, #order-book_4 {
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+#order-book-stats_1 {
+    margin-top: -5px;
+}
+
+#pass_fail {
+    margin-bottom: 10px;
+}
+
+#order-book-stats_2 {
+    margin-top: -10px;
+}
+
+#blank-space {
+    height: 25px;
+}
+
+#navbar-row {
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+#profile_pic img {
+    width: 20px;
+    height: 20px;
+    border-radius: 300px;
+}
+
+#profile_pic {
+    border: none;
+    background: none;
+    margin-left: 0px;
+    margin-top: 1px;
+}
+
+#site_title {
+    font-family: 'Handjet';
+    white-space: nowrap;
+    font-size: 13px;
+    background-color: #F0F0F0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 27px;
+    margin-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+#navbar-hamburger-menu button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+}
+
+#navbar-hamburger-menu {
+    margin-top: 2px;
+    margin-left: 12px;
+}
+
+#add-funds-button {
+    border: none;
+    background: none;
+    background-color: #F0F0F0;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 11px;
+    margin-left: -10px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+#add-funds-button p {
+    line-height: 12px;
+}
+
+#funds-amount {
+    margin-top: 9.5px;
+    margin-left: -11px;
+}
+
+.course-button {
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.item-button {
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+#item-title-navbar {
+    margin-top: 10px;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#order-bar {
+    margin-top: -10px;
+}
+
+#value_enter .input-group-text {
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    font-size: 12px;
+}
+
+#value_enter input {
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    text-align: right;
+}
+
+/* Remove spinner buttons from number input */
+#value_enter input::-webkit-outer-spin-button,
+#value_enter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.selected-pass {
+    outline: 2px solid #10BE41 !important;
+    outline-offset: 2px;
+  }
+  
+  .selected-fail {
+    outline: 2px solid #CD0C0C !important;
+    outline-offset: 2px;
+  }
+
+.course-button.selected {
+    background-color: #e9ecef;
+    border-color: #0d6efd;
+}
+
+.item-button.selected {
+    background-color: #e9ecef;
+    border-color: #0d6efd;
+}
+
+.price-text {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+#pass p, #fail p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#addFundsForm .input-group {
+    margin: 10px 0;
+}
+
+#addFundsForm .input-group-text {
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    font-size: 12px;
+}
+
+#addFundsForm input {
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    text-align: right;
+}
+
+/* Remove spinner buttons from number input */
+#addFundsForm input::-webkit-outer-spin-button,
+#addFundsForm input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

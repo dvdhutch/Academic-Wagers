@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Academic Wagers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="admin_styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Noto+Sans+Symbols:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-container">
+            <div id="screen_back">
+                <div class="body">
+                    <div class="row" id="top-row">
+                        <div class="col-2" id="back_button">
+                            <button onclick="window.location.href='index.html';">←</button>
+                        </div>
+                        <div class="col-8 d-flex justify-content-center" id="profile_pic_large">
+                            <img src="/images/profile_photo_blank.png" alt="profile_photo_blank_large">
+                        </div>
+                    </div>
+                    <div class="row" id="name-row">
+                        <div class="col d-flex justify-content-center">
+                            <p class="p-heavy" id="username"></p>
+                        </div>
+                    </div>
+                    <div class="row" id="total_row">
+                        <div class="col d-flex justify-content-center" id="funds-amount">
+                            <h5>$0.00</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <p class="p-smaller">Total in Academic Wagers</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center" id="block_button">
+                            <button class="btn btn-dark" type="button" id="transferButton">Transfer to bank</button>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <div class="row" id="academics_title"">
+                            <div class="col">
+                                <h6>Academics</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" id="uni_title">
+                                <p class="p-heavy">Columbia University</p>
+                            </div>
+                        </div>
+                        <div class="row" id="grad_year">
+                            <div class="col-5 d-flex">
+                                <p class="p-small">Graduation year</p>
+                            </div>
+                            <div class="col-7 d-flex">
+                                <p class="p-small">2026</p>
+                            </div>
+                        </div>
+                        <div class="row" id="major">
+                            <div class="col-4 d-flex">
+                                <p class="p-small">Major</p>
+                            </div>
+                            <div class="col-8 d-flex">
+                                <p class="p-small">Data Science</p>
+                            </div>
+                        </div>
+                        <div class="row" id="enrollment_title"">
+                            <div class="col">
+                                <h6>Enrollment</h6>
+                            </div>
+                        </div>
+                        <div class="row" id="class">
+                            <div class="col-4 d-flex">
+                                <p class="p-small">Macroeconomics</p>
+                            </div>
+                            <div class="col-8 d-flex" id="prof">
+                                <p class="p-small">J Appleseed</p>
+                            </div>
+                        </div>
+                        <div class="row" id="class">
+                            <div class="col-4 d-flex">
+                                <p class="p-small">US History</p>
+                            </div>
+                            <div class="col-8 d-flex" id="prof">
+                                <p class="p-small">J Smith</p>
+                            </div>
+                        </div>
+                        <div class="row" id="class">
+                            <div class="col-4 d-flex">
+                                <p class="p-small">Mechanics</p>
+                            </div>
+                            <div class="col-8 d-flex" id="prof">
+                                <p class="p-small">Y Chen</p>
+                            </div>
+                        </div>
+                        <div class="row" id="class">
+                            <div class="col-4 d-flex">
+                                <p class="p-small">English</p>
+                            </div>
+                            <div class="col-8 d-flex" id="prof">
+                                <p class="p-small">A Datta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="disclaimer">
+                        <p class="p-smaller">All investing involves risk, including the loss of principal. Must be 21+ and physically present in New York to place wagers. If you or someone you know has a gambling problem, text <b>HOPENY (467369)</b> or call <b>877-846-7369</b>. Subject to regulatory licensing requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="admin.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
