@@ -1,3 +1,5 @@
+// We created the core data structure for the user data and the course items. Claude.ai helped us write the code for the order book and the user bets.
+
 // User data
 
 const userData = {
@@ -956,7 +958,7 @@ function loadFromLocalStorage() {
     }
 }
 
-// Add this function to handle order creation
+// Function to handle order creation
 function createOrderElement(orderData) {
     const orderRow = document.createElement('div');
     orderRow.className = 'row order-entry';
@@ -980,7 +982,7 @@ function createOrderElement(orderData) {
     return orderRow;
 }
 
-// Add this function near your other localStorage functions
+// Function to save the order book for a specific course item to localStorage
 function saveOrderBookToLocalStorage(courseIndex, itemIndex, orders) {
     // Get existing academic courses or initialize
     const savedCourses = JSON.parse(localStorage.getItem('academicCourses')) || academicCourses;

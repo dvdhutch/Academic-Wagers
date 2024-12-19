@@ -1,10 +1,13 @@
+// Used Claude.ai to help me write this code
+
 console.log('Script file loaded');
 
+// Initializes user data from localStorage
 let userData = JSON.parse(localStorage.getItem('userData')) || {
     balance: 0
-    // ... other default properties
 };
 
+// Sets up event listeners and initializes UI based on current page
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM Content Loaded');
     
@@ -57,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateUserDataUI();
 });
 
+// Updates the UI elements with current user data values
 function updateUserDataUI() {
     console.log('Updating UI with userData:', userData);
     
@@ -73,9 +77,7 @@ function updateUserDataUI() {
     // ... rest of your updateUserDataUI code ...
 }
 
-// Add this at the bottom of your script.js file, after all other code
-
-// Wait for page load
+// Initializes transfer button functionality on admin page load
 window.onload = function() {
     // Only run this code if we're on the admin page
     if (!window.location.pathname.includes('admin.html')) return;
@@ -127,6 +129,7 @@ window.onload = function() {
     };
 };
 
+// Sets up transfer button click handler with confirmation dialog
 document.addEventListener('DOMContentLoaded', function() {
     const transferButton = document.getElementById('transferButton');
     

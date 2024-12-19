@@ -1,3 +1,5 @@
+// Sets user balance to 0 and transfers funds to bank account
+
 document.addEventListener('DOMContentLoaded', function() {
     const transferButton = document.getElementById('transferButton');
     
